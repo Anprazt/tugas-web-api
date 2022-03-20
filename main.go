@@ -14,6 +14,7 @@ func main() {
 	})
 	r.GET("/home", handler.HomeHandler)
 	r.GET("/item", handler.QueryStringItem)
-	r.GET("/id/:id", handler.ProductHandler)
+	r.GET("/id/:id/produk", handler.ProductHandler)
+	r.POST("/mahasiswa", handler.MahasiswaHandler)
 	r.Run(":8080")
 }
